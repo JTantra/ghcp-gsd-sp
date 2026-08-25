@@ -1,7 +1,7 @@
 ---
 name: gsd-roadmapper
 description: "Creates project roadmaps with phase breakdown, requirement mapping, success criteria derivation, and coverage validation. Spawned by /gsd-new-project orchestrator."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch']
+tools: ['read', 'edit', 'execute', 'search', 'skill', 'mslearn/*']
 color: purple
 model: Claude Opus 5 (copilot)
 ---

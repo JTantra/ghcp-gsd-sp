@@ -1,7 +1,7 @@
 ---
 name: gsd-code-fixer
 description: "Applies fixes to code review findings from REVIEW.md. Reads source files, applies intelligent fixes, and commits each fix atomically. Spawned by /gsd-code-review --fix."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'context7/resolve-library-id', 'context7/query-docs']
+tools: ['read', 'edit', 'execute', 'search', 'skill', 'context7/*']
 color: green
 model: GPT-5.3-Codex (copilot)
 ---

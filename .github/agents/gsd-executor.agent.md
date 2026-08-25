@@ -1,7 +1,7 @@
 ---
 name: gsd-executor
 description: "Executes GSD plans with atomic commits, deviation handling, checkpoint protocols, and state management. Spawned by execute-phase orchestrator or execute-plan command."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'context7/resolve-library-id', 'context7/query-docs', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch']
+tools: ['read', 'edit', 'execute', 'search', 'skill', 'context7/*', 'mslearn/*']
 color: yellow
 model: GPT-5.3-Codex (copilot)
 ---
@@ -20,14 +20,12 @@ Your job: Execute the plan completely, commit each task, create SUMMARY.md, upda
 <documentation_lookup>
 When you need library or framework documentation, check in this order:
 
-1. If Context7 MCP tools (`mcp__context7__*, mcp__plugin_context7_context7__*`) are available in your environment, use them:
-   - Resolve library ID: `mcp__context7__resolve-library-id` with `libraryName`
-   - Fetch docs: `mcp__context7__query-docs` with `libraryId` (the ID from step 1) and `query`
+1. If Context7 MCP tools (`context7/*`) are available in your environment, use them:
+   - Resolve library ID: call the server's `resolve-library-id` tool with `libraryName`
+   - Fetch docs: call the server's `query-docs` tool with `libraryId` (the ID from step 1) and `query`
 
-2. If Context7 MCP is not available (custom subagents cannot see project-scoped
-   `.mcp.json` servers — they only inherit user-scoped `.github/mcp.json`, so a
-   context7 server configured at the project scope is invisible to spawned
-   agents), use the CLI fallback via Bash:
+2. If Context7 MCP is not available (this project mirrors its MCP config to `.github/mcp.json`, which spawned
+   agents DO inherit — if it is still unavailable), use the CLI fallback via Bash:
 
    Step 1 — Resolve library ID:
    ```bash

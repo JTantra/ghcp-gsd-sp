@@ -1,7 +1,7 @@
 ---
 name: gsd-advisor-researcher
 description: "Researches a single gray area decision and returns a structured comparison table with rationale. Spawned by discuss-phase advisor mode."
-tools: ['read', 'execute', 'search', 'skill', 'web', 'context7/resolve-library-id', 'context7/query-docs', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch']
+tools: ['read', 'execute', 'search', 'skill', 'web', 'context7/*', 'mslearn/*']
 color: cyan
 model: Claude Opus 5 (copilot)
 ---
@@ -97,8 +97,8 @@ Return EXACTLY this structure:
 | 3rd | WebSearch | Ecosystem discovery, community patterns, pitfalls | Needs verification |
 
 **Context7 flow:**
-1. `mcp__context7__resolve-library-id` with libraryName
-2. `mcp__context7__query-docs` with resolved ID + specific query
+1. `context7/* (resolve-library-id)` with libraryName
+2. `context7/* (query-docs)` with resolved ID + specific query
 
 Keep research focused on the single gray area. Do not explore tangential topics.
 </tool_strategy>

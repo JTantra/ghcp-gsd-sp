@@ -1,7 +1,7 @@
 ---
 name: gsd-code-reviewer
 description: "Reviews source files for bugs, security issues, and code quality problems. Produces structured REVIEW.md with severity-classified findings. Spawned by /gsd-code-review."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'context7/resolve-library-id', 'context7/query-docs']
+tools: ['read', 'edit', 'execute', 'search', 'skill', 'context7/*']
 color: orange
 model: GPT-5.3-Codex (copilot)
 ---

@@ -1,7 +1,7 @@
 ---
 name: gsd-intel-updater
 description: "Analyzes codebase and writes structured intel files to .planning/intel/."
-tools: ['read', 'edit', 'execute', 'search', 'context7/resolve-library-id', 'context7/query-docs', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch']
+tools: ['read', 'edit', 'execute', 'search', 'context7/*', 'mslearn/*']
 color: cyan
 model: Claude Opus 5 (copilot)
 ---

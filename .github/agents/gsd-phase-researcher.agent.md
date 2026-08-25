@@ -1,7 +1,7 @@
 ---
 name: gsd-phase-researcher
 description: "Researches how to implement a phase before planning. Produces RESEARCH.md consumed by gsd-planner. Spawned by /gsd-plan-phase orchestrator."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'context7/resolve-library-id', 'context7/query-docs', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch']
+tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'context7/*', 'mslearn/*']
 color: cyan
 model: Claude Opus 5 (copilot)
 ---
@@ -128,7 +128,7 @@ For each item where `fetch` is present, invoke the MCP tool matching `fetch.prov
 
 | provider id | MCP tool / built-in |
 |-------------|---------------------|
-| `context7` | `mcp__context7__resolve-library-id` then `mcp__context7__query-docs` |
+| `context7` | `context7/* (resolve-library-id)` then `context7/* (query-docs)` |
 | `ref` | `mcp__ref__*` (use the appropriate ref MCP tool for the query) |
 | `jina` | `mcp__jina__*` (use the appropriate jina MCP tool for the query) |
 | `exa` | `mcp__exa__web_search_exa` with `fetch.query` |
