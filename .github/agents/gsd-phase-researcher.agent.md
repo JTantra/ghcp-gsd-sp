@@ -2,7 +2,6 @@
 name: gsd-phase-researcher
 description: "Researches how to implement a phase before planning. Produces RESEARCH.md consumed by gsd-planner. Spawned by /gsd-plan-phase orchestrator."
 tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'context7/*', 'mslearn/*']
-color: cyan
 model: Claude Opus 5 (copilot)
 ---
 

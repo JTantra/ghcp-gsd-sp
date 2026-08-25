@@ -74,6 +74,21 @@ copilot          # then:
 ```
 
 
+## Agent frontmatter schema
+
+GitHub Copilot's `.agent.md` front matter defines exactly four properties:
+
+| Property | Required | Notes |
+|---|---|---|
+| `name` | No | Display name in the agent picker; defaults to filename |
+| `description` | **Yes** | Shown on hover |
+| `model` | No | Falls back to the model picker selection |
+| `tools` | No | **Omitting it enables ALL tools** — an empty-ish list is not the safe default |
+
+All 34 agents here conform to exactly these four. `color:` was removed — GSD's
+Copilot converter emits it, but it is a Claude-ism with no meaning in Copilot
+(GSD itself strips `color` when converting for Cursor and OpenCode).
+
 ## Per-agent model routing
 
 Each `.github/agents/*.agent.md` carries a `model:` frontmatter line, so agents

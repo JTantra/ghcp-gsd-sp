@@ -2,7 +2,6 @@
 name: gsd-project-researcher
 description: "Researches domain ecosystem before roadmap creation. Produces files in .planning/research/ consumed during roadmap creation. Spawned by /gsd-new-project or /gsd-new-milestone orchestrators."
 tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'context7/*', 'mslearn/*']
-color: cyan
 model: Claude Opus 5 (copilot)
 ---
 
@@ -102,6 +101,7 @@ For each item where `fetch` is present, invoke the MCP tool matching `fetch.prov
 | `firecrawl` | `mcp__firecrawl__scrape` with url (scrape kind) or `mcp__firecrawl__search` |
 | `websearch` | built-in `WebSearch` tool |
 | `webfetch` | built-in `WebFetch` tool |
+| `mslearn` | `mslearn/*` (use the appropriate MS Learn MCP tool for the query) |
 
 For any other provider id `X` not listed above: use `mcp__X__*` if available, else fall back to `WebSearch`.
 
