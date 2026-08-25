@@ -1,7 +1,7 @@
 ---
 name: gsd-ai-researcher
 description: "Researches a chosen AI framework's official docs to produce implementation-ready guidance — best practices, syntax, core patterns, and pitfalls distilled for the specific use case. Writes the Framework Quick Reference and Implementation Guidance sections of AI-SPEC.md. Spawned by /gsd-ai-integration-phase orchestrator."
-tools: ['read', 'edit', 'execute', 'search', 'web', 'io.github.upstash/context7/*', 'mcp__plugin_context7_context7__*']
+tools: ['read', 'edit', 'execute', 'search', 'web', 'context7/resolve-library-id', 'context7/query-docs', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch']
 color: green
 model: Claude Opus 5 (copilot)
 ---

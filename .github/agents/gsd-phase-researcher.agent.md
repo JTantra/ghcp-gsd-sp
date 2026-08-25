@@ -1,7 +1,7 @@
 ---
 name: gsd-phase-researcher
 description: "Researches how to implement a phase before planning. Produces RESEARCH.md consumed by gsd-planner. Spawned by /gsd-plan-phase orchestrator."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'io.github.upstash/context7/*', 'mcp__plugin_context7_context7__*', 'mcp__firecrawl__*', 'mcp__exa__*', 'mcp__tavily__*', 'mcp__ref__*', 'mcp__jina__*', 'mcp__perplexity__*']
+tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'context7/resolve-library-id', 'context7/query-docs', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch']
 color: cyan
 model: Claude Opus 5 (copilot)
 ---

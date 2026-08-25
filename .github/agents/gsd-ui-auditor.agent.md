@@ -1,7 +1,7 @@
 ---
 name: gsd-ui-auditor
 description: "Retroactive 6-pillar visual audit of implemented frontend code. Produces scored UI-REVIEW.md. Spawned by /gsd-ui-review orchestrator."
-tools: ['read', 'edit', 'execute', 'search', 'skill']
+tools: ['read', 'edit', 'execute', 'search', 'skill', 'playwright/*']
 color: pink
 model: Gemini 3.1 Pro (Preview) (copilot)
 ---

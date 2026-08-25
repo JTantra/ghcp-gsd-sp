@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--caps=vision", "--browser=msedge", "--isolated"]
+    },
+    "context7": { "type": "http", "url": "https://mcp.context7.com/mcp" },
+    "mslearn":  { "type": "http", "url": "https://learn.microsoft.com/api/mcp" },
+    "gsd": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@opengsd/gsd-core", "gsd-mcp-server"],
+      "cwd": "."
+    }
+  },
+  "inputs": []
+}

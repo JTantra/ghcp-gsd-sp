@@ -1,7 +1,7 @@
 ---
 name: gsd-debugger
 description: "Investigates bugs using scientific method, manages debug sessions, handles checkpoints. Spawned by /gsd-debug orchestrator."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'web']
+tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'context7/resolve-library-id', 'context7/query-docs', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch']
 color: orange
 model: Claude Opus 5 (copilot)
 ---

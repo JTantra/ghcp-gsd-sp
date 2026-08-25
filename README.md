@@ -99,6 +99,49 @@ Alternative (provider-neutral, no file edits) — `.planning/config.json`:
 model ID. v1.42+ also has `model_policy` with provider presets. Frontmatter is
 used here to match the ghcp-gsd convention and pin exact Copilot model names.
 
+## MCP servers
+
+`.mcp.json` (Copilot CLI) and `.vscode/mcp.json` (VS Code) register four servers:
+
+| Server | Type | Purpose |
+|---|---|---|
+| `context7` | http | Library/framework API docs — real signatures, not recalled ones |
+| `mslearn` | http | Azure / Microsoft service docs and best practices |
+| `playwright` | stdio | Real-browser visual testing (`--caps=vision --browser=msedge --isolated`) |
+| `gsd` | stdio | GSD's own server: `gsd_invoke_command`, `gsd_read_state`, `gsd_write_state` |
+| `atlassian` | *(add when needed)* | Confluence/Jira publishing |
+
+**`--isolated` is deliberate.** GSD runs execution waves in parallel, and browser
+MCP servers hold an exclusive lock on their profile dir — a second instance dies
+with "browser is already running". GSD cannot fix this for you; the flag belongs
+on your MCP registration.
+
+## Per-agent MCP grants
+
+Grants follow the work, not the org chart — an agent gets a server only if its
+job needs the outside world.
+
+| Grant | Agents | Why |
+|---|---|---|
+| context7 + mslearn | planner, executor, all researchers, framework-selector, debugger, security-auditor, intel-updater | Writing/planning against real APIs; wrong signatures are the expensive failure |
+| context7 only | code-fixer, code-reviewer, verifier, integration-checker, eval-planner | Verify code against real contracts; no need for MS service docs |
+| mslearn only | roadmapper | Capability/sequencing questions, not API-level |
+| playwright | ui-checker, ui-auditor, ui-researcher | Only agents that should drive a browser |
+| atlassian | doc-writer, doc-synthesizer, doc-classifier, doc-verifier | Only agents that should write to a wiki |
+| **none** | codebase-mapper, pattern-mapper, plan-checker, research-synthesizer, assumptions-analyzer, nyquist-auditor, eval-auditor, mempalace-curator, user-profiler, debug-session-manager | Read the repo or other agents' output — external fetch is latency and injection surface with no upside |
+
+Least privilege is the point: `gsd-executor` cannot publish to Confluence,
+`gsd-doc-writer` cannot drive a browser, and the ten local-only agents cannot
+reach the network at all.
+
+### Two upstream bugs fixed here
+
+`gsd-nyquist-auditor` and `gsd-security-auditor` shipped with
+`tools: ['- read']` — a stray list dash inside a YAML flow sequence, which
+parses as one tool literally named `- read`. Both agents were effectively
+tool-less: nyquist-auditor is *supposed* to write and run tests, and
+security-auditor to grep the codebase. Repaired to real tool lists.
+
 ## MCP persistence
 
 `.mcp.json` registers project-local MCP servers. Agents opt in via the `tools:`

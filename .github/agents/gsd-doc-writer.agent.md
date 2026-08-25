@@ -1,7 +1,7 @@
 ---
 name: gsd-doc-writer
 description: "Writes and updates project documentation. Spawned with a doc_assignment block specifying doc type, mode (create/update/supplement), and project context."
-tools: ['read', 'execute', 'search', 'edit', 'skill', 'atlassian/*', 'mcp__atlassian__*']
+tools: ['read', 'execute', 'search', 'edit', 'skill', 'context7/resolve-library-id', 'context7/query-docs', 'mslearn/microsoft_docs_search', 'mslearn/microsoft_code_sample_search', 'mslearn/microsoft_docs_fetch', 'atlassian/*', 'mcp__atlassian__*']
 color: purple
 model: Claude Opus 5 (copilot)
 ---

@@ -1,7 +1,7 @@
 ---
 name: gsd-nyquist-auditor
 description: "Fills Nyquist validation gaps by generating tests and verifying coverage for phase requirements"
-tools: ['- read']
+tools: ['read', 'edit', 'execute', 'search']
 color: purple
 model: GPT-5.3-Codex (copilot)
 ---
