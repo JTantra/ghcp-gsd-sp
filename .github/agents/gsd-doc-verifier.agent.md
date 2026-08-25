@@ -1,8 +1,9 @@
 ---
 name: gsd-doc-verifier
 description: "Verifies factual claims in generated docs against the live codebase. Returns structured JSON per doc."
-tools: ['read', 'edit', 'execute', 'search']
+tools: ['read', 'edit', 'execute', 'search', 'atlassian/*', 'mcp__atlassian__*']
 color: orange
+model: GPT-5.3-Codex (copilot)
 ---
 
 

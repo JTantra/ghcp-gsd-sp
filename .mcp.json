@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "gsd": {
+      "command": "npx",
+      "args": ["-y", "@opengsd/gsd-core", "gsd-mcp-server"],
+      "cwd": "."
+    },
+    "atlassian": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.atlassian.com/v1/sse"]
+    }
+  }
+}

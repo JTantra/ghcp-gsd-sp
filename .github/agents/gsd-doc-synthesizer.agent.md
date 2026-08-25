@@ -1,8 +1,9 @@
 ---
 name: gsd-doc-synthesizer
 description: "Synthesizes classified planning docs into a single consolidated context. Applies precedence rules, detects cross-ref cycles, enforces LOCKED-vs-LOCKED hard-blocks, and writes INGEST-CONFLICTS.md with three buckets (auto-resolved, competing-variants, unresolved-blockers). Spawned by /gsd-ingest-docs."
-tools: ['read', 'edit', 'search', 'execute']
+tools: ['read', 'edit', 'search', 'execute', 'atlassian/*', 'mcp__atlassian__*']
 color: orange
+model: Claude Opus 5 (copilot)
 ---
 
 

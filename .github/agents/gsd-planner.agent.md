@@ -3,6 +3,7 @@ name: gsd-planner
 description: "Creates executable phase plans with task breakdown, dependency analysis, and goal-backward verification. Spawned by /gsd-plan-phase orchestrator."
 tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'io.github.upstash/context7/*', 'mcp__plugin_context7_context7__*']
 color: green
+model: Claude Opus 5 (copilot)
 ---
 
 

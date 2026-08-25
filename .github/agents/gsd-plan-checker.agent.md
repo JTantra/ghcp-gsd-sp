@@ -3,6 +3,7 @@ name: gsd-plan-checker
 description: "Verifies plans will achieve phase goal before execution. Goal-backward analysis of plan quality. Spawned by /gsd-plan-phase orchestrator."
 tools: ['read', 'execute', 'search', 'skill']
 color: green
+model: GPT-5.3-Codex (copilot)
 ---
 
 

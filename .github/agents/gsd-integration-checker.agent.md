@@ -3,6 +3,7 @@ name: gsd-integration-checker
 description: "Verifies cross-phase integration and E2E flows. Checks that phases connect properly and user workflows complete end-to-end."
 tools: ['read', 'execute', 'search', 'skill']
 color: blue
+model: GPT-5.3-Codex (copilot)
 ---
 
 

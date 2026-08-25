@@ -3,6 +3,7 @@ name: gsd-debug-session-manager
 description: "Manages multi-cycle /gsd-debug checkpoint and continuation loop in isolated context. Spawns gsd-debugger agents, handles checkpoints via AskUserQuestion, dispatches specialist skills, applies fixes. Returns compact summary to main context. Spawned by /gsd-debug command."
 tools: ['read', 'edit', 'execute', 'search', 'agent', 'ask_user']
 color: orange
+model: Claude Opus 5 (copilot)
 ---
 
 

@@ -3,6 +3,7 @@ name: gsd-advisor-researcher
 description: "Researches a single gray area decision and returns a structured comparison table with rationale. Spawned by discuss-phase advisor mode."
 tools: ['read', 'execute', 'search', 'skill', 'web', 'io.github.upstash/context7/*', 'mcp__plugin_context7_context7__*']
 color: cyan
+model: Claude Opus 5 (copilot)
 ---
 
 

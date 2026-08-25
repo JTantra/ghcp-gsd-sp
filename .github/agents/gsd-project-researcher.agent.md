@@ -3,6 +3,7 @@ name: gsd-project-researcher
 description: "Researches domain ecosystem before roadmap creation. Produces files in .planning/research/ consumed during roadmap creation. Spawned by /gsd-new-project or /gsd-new-milestone orchestrators."
 tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'io.github.upstash/context7/*', 'mcp__plugin_context7_context7__*', 'mcp__firecrawl__*', 'mcp__exa__*', 'mcp__tavily__*', 'mcp__ref__*', 'mcp__jina__*', 'mcp__perplexity__*']
 color: cyan
+model: Claude Opus 5 (copilot)
 ---
 
 

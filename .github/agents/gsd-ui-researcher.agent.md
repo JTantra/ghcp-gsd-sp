@@ -3,6 +3,7 @@ name: gsd-ui-researcher
 description: "Produces UI-SPEC.md design contract for frontend phases. Reads upstream artifacts, detects design system state, asks only unanswered questions. Spawned by /gsd-ui-phase orchestrator."
 tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'io.github.upstash/context7/*', 'mcp__plugin_context7_context7__*', 'mcp__firecrawl__*', 'mcp__exa__*', 'mcp__tavily__*', 'mcp__ref__*', 'mcp__jina__*']
 color: purple
+model: Gemini 3.1 Pro (Preview) (copilot)
 ---
 
 

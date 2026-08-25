@@ -3,6 +3,7 @@ name: gsd-pattern-mapper
 description: "Analyzes codebase for existing patterns and produces PATTERNS.md mapping new files to closest analogs. Read-only codebase analysis spawned by /gsd-plan-phase orchestrator before planning."
 tools: ['read', 'execute', 'search', 'edit']
 color: purple
+model: Claude Opus 5 (copilot)
 ---
 
 
