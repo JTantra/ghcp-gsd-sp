@@ -1,5 +1,19 @@
 # ghcp-gsd-sp
 
+## Shared Azure engineering profile
+
+The Azure profile is now installed under `profiles/azure/`, with the shared `skills/azure-engineering/` skill, selected GSD role wiring and an idempotent installer. Microsoft Learn is registered separately from pinned Azure MCP **2.0.5**. Azure MCP uses `--read-only` and an explicit eight-tool guidance/template allowlist: it does not expose deployment, resource enumeration, secret reads or account changes.
+
+```sh
+npm run profile:install
+npm run profile:check
+npm test
+```
+
+See [profile standards and activation](profiles/azure/README.md), [review checklist](profiles/azure/review-checklist.md) and [verification](docs/azure-profile-verification.md). Application-specific Azure targets and credentials are deliberately absent. The profile prefers Azure for an agreed Azure workload; it does not authorize migrating unrelated applications.
+
+The separate [ghcp-speckit-sp starter](https://github.com/JTantra/ghcp-speckit-sp) uses the same Azure policy and tracking engine, with Spec Kit-native extension/preset integration instead of GSD. Shared code is copied, not automatically synchronized. Original selected Superpowers skill license: [MIT notice](licenses/superpowers-skills-LICENSE).
+
 ## Pluggable project tracking
 
 GitHub milestones and feature issues can now be linked to GSD execution through a provider-neutral Node 24 CLI. GitHub is implemented; Jira/other tools plug in through a local adapter contract, without rewriting the engine or workflow instructions.

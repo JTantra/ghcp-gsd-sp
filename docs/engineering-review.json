@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [],
+  "summary": "Previously\n  identified defects are resolved in the supplied paths. Whole-file integrity is now enforced before\n   substring checks via reviewed lockfile hashes, malformed or unterminated frontmatter is rejected,\n   installed extension registration now requires an actual array entry match, MCP/GSD config roots\n  reject null/arrays, equivalent MCP server objects no longer fail on key order alone, and tracker\n  config parsing/validation now correctly rejects malformed JSON and invalid root shapes without\n  treating them as absent.",
+  "reviewer": "Independent read-only GitHub Copilot CLI context, gpt-5.4",
+  "scope": "New Azure profile installer, Spec Kit wiring/integrity and tracker guards, and integration metadata; not a formal security audit."
+}

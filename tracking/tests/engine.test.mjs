@@ -43,7 +43,7 @@ test('evidence upserts one reported comment and never closes an issue',async()=>
   const e={status:'verified',summary:'Local tests passed',references:['docs/test-report.md']};
   await assert.rejects(t.engine.event('ACME-1',e),/apply/);
   await t.engine.event('ACME-1',e,{apply:true});await t.engine.event('ACME-1',e,{apply:true});
-  assert.equal(t.provider.comments.length,1);assert.match(t.provider.comments[0].body,/Reported/);assert.equal(t.provider.items[0].state,'open');
+  assert.equal(t.provider.comments.length,1);assert.match(t.provider.comments[0].body,/Reported/);assert.doesNotMatch(t.provider.comments[0].body,/GSD/);assert.equal(t.provider.items[0].state,'open');
   await assert.rejects(t.engine.event('ACME-1',{status:'done',summary:'done',references:[]},{apply:true}),/status/);
  }finally{await t.cleanup();}
 });

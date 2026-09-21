@@ -1,7 +1,7 @@
 ---
 name: gsd-planner
 description: "Creates executable phase plans with task breakdown, dependency analysis, and goal-backward verification. Spawned by /gsd-plan-phase orchestrator."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'context7/*', 'mslearn/*']
+tools: ["read","edit","execute","search","skill","web","context7/*","mslearn/*","azure/*"]
 model: Claude Opus 5 (copilot)
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: gsd-framework-selector
 description: "Presents an interactive decision matrix to surface the right AI/LLM framework for the user's specific use case. Produces a scored recommendation with rationale. Spawned by /gsd-ai-integration-phase and /gsd-select-framework orchestrators."
-tools: ['read', 'execute', 'search', 'web', 'ask_user', 'context7/*', 'mslearn/*']
+tools: ["read","execute","search","web","ask_user","context7/*","mslearn/*","azure/*"]
 model: Claude Opus 5 (copilot)
 ---
 

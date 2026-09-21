@@ -3,15 +3,57 @@
     "playwright": {
       "type": "stdio",
       "command": "npx",
-      "args": ["@playwright/mcp@latest", "--caps=vision", "--browser=msedge", "--isolated"]
+      "args": [
+        "@playwright/mcp@latest",
+        "--caps=vision",
+        "--browser=msedge",
+        "--isolated"
+      ]
     },
-    "context7": { "type": "http", "url": "https://mcp.context7.com/mcp" },
-    "mslearn":  { "type": "http", "url": "https://learn.microsoft.com/api/mcp" },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "mslearn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
     "gsd": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@opengsd/gsd-core", "gsd-mcp-server"],
+      "args": [
+        "-y",
+        "@opengsd/gsd-core",
+        "gsd-mcp-server"
+      ],
       "cwd": "."
+    },
+    "azure": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@azure/mcp@2.0.5",
+        "server",
+        "start",
+        "--read-only",
+        "--tool",
+        "get_azure_bestpractices_get",
+        "--tool",
+        "get_azure_bestpractices_ai_app",
+        "--tool",
+        "azureterraformbestpractices_get",
+        "--tool",
+        "bicepschema_get",
+        "--tool",
+        "wellarchitectedframework_serviceguide_get",
+        "--tool",
+        "functions_language_list",
+        "--tool",
+        "functions_project_get",
+        "--tool",
+        "functions_template_get"
+      ]
     }
   },
   "inputs": []

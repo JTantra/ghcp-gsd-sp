@@ -22,36 +22,54 @@
       "skills/testing-anti-patterns",
       "skills/condition-based-waiting",
       "skills/verification-before-completion",
-      "skills/tracker-awareness"
+      "skills/tracker-awareness",
+      "skills/azure-engineering"
     ],
     "gsd-planner": [
       "skills/preserving-productive-tensions",
       "skills/when-stuck",
-      "skills/tracker-awareness"
+      "skills/tracker-awareness",
+      "skills/azure-engineering"
     ],
     "gsd-code-reviewer": [
       "skills/requesting-code-review",
       "skills/receiving-code-review",
-      "skills/tracker-awareness"
+      "skills/tracker-awareness",
+      "skills/azure-engineering"
     ],
     "gsd-verifier": [
       "skills/verification-before-completion",
       "skills/defense-in-depth",
-      "skills/tracker-awareness"
+      "skills/tracker-awareness",
+      "skills/azure-engineering"
     ],
     "gsd-debugger": [
       "skills/systematic-debugging",
-      "skills/root-cause-tracing"
+      "skills/root-cause-tracing",
+      "skills/azure-engineering"
     ],
     "gsd-code-fixer": [
       "skills/root-cause-tracing",
       "skills/test-driven-development"
     ],
     "gsd-roadmapper": [
-      "skills/tracker-awareness"
+      "skills/tracker-awareness",
+      "skills/azure-engineering"
     ],
     "gsd-plan-checker": [
       "skills/tracker-awareness"
+    ],
+    "gsd-security-auditor": [
+      "skills/azure-engineering"
+    ],
+    "gsd-project-researcher": [
+      "skills/azure-engineering"
+    ],
+    "gsd-phase-researcher": [
+      "skills/azure-engineering"
+    ],
+    "gsd-framework-selector": [
+      "skills/azure-engineering"
     ]
   }
 }

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "azure",
+  "version": "1.0.0",
+  "frameworks": [
+    "gsd",
+    "speckit"
+  ],
+  "gsdRoles": [
+    "gsd-planner",
+    "gsd-executor",
+    "gsd-code-reviewer",
+    "gsd-verifier",
+    "gsd-debugger",
+    "gsd-security-auditor",
+    "gsd-project-researcher",
+    "gsd-phase-researcher",
+    "gsd-framework-selector",
+    "gsd-roadmapper"
+  ],
+  "skill": "skills/azure-engineering",
+  "azureMcpVersion": "2.0.5",
+  "scope": "guidance-only/read-only; no Azure resource mutation"
+}

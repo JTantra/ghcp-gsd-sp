@@ -126,7 +126,7 @@ export function createEngine({provider,target,providerKey,statePath}){
    const s=await check();required(s.items.some(i=>i.id===id),'Issue is not linked');
    const state=await load();state.events??={};const eventKey=hash(id);let record=state.events[eventKey];
    const mark=record?.marker??marker('event',randomUUID());
-   const body=`${mark}\n## Reported GSD progress\n\nStatus: ${evidence.status}\n\n${evidence.summary}\n\nEvidence references (reported, not independently verified by this adapter):\n${evidence.references.map(x=>'- '+x).join('\n')}`;
+   const body=`${mark}\n## Reported engineering progress\n\nStatus: ${evidence.status}\n\n${evidence.summary}\n\nEvidence references (reported, not independently verified by this adapter):\n${evidence.references.map(x=>'- '+x).join('\n')}`;
    let current;
    if(record?.id){current=await provider.getComment(record.id);required(hash(current.body)===record.bodyHash,'Reported comment was edited remotely; reconcile before updating');}
    else if(record){

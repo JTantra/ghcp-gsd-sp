@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "profiles": [
+    "azure"
+  ],
+  "framework": "gsd"
+}

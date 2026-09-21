@@ -18,3 +18,5 @@ jobs:
         run: npm test
       - name: Verify installed workflow integration
         run: npm run tracking:check
+      - name: Verify Azure profile wiring (not a compliance scan)
+        run: npm run profile:check

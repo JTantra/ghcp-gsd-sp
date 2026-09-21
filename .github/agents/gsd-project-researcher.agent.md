@@ -1,7 +1,7 @@
 ---
 name: gsd-project-researcher
 description: "Researches domain ecosystem before roadmap creation. Produces files in .planning/research/ consumed during roadmap creation. Spawned by /gsd-new-project or /gsd-new-milestone orchestrators."
-tools: ['read', 'edit', 'execute', 'search', 'skill', 'web', 'context7/*', 'mslearn/*']
+tools: ["read","edit","execute","search","skill","web","context7/*","mslearn/*","azure/*"]
 model: Claude Opus 5 (copilot)
 ---
 
