@@ -1,0 +1,18 @@
+{
+  "milestone": {
+    "key": "pilot-v1",
+    "title": "Production pilot",
+    "description": "Approved scope for a controlled pilot"
+  },
+  "features": [
+    {
+      "key": "persist-requests",
+      "title": "Persist requests across restarts",
+      "description": "Replace temporary in-memory request storage with durable persistence. Preserve current validation.",
+      "acceptanceCriteria": [
+        "A saved request is retrievable after restart",
+        "Failed writes are reported without falsely confirming success"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "provider": "github",
+  "repository": "OWNER/REPOSITORY",
+  "stateFile": "tracking-state.json",
+  "tokenEnv": "GITHUB_TOKEN"
+}

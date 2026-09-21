@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: At scope approval, offer tracker-sync. Retain requirement-to-feature mappings in REQUIREMENTS.md and the issue URL in CONTEXT.md.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 <purpose>
 Initialize a new project through unified flow: questioning, research (optional), requirements, roadmap. This is the most leveraged moment in any project — deep questioning here means better plans, better execution, better outcomes. One workflow takes you from idea to ready-for-planning.
 </purpose>

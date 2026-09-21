@@ -1,2 +1,11 @@
 node_modules/
 .DS_Store
+.env
+.env.*
+!.env.example
+.runtime/
+coverage/
+.planning/tracking-state.json*
+.planning/tracking-config.json
+.planning/tracking-import.json
+.planning/tracking-outbox/

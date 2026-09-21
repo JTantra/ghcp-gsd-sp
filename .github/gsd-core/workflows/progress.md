@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: When configured, run tracking status and report remote state separately from local execution state. Surface scope drift and auth errors; do not recommend execution until check succeeds.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 <purpose>
 Check project progress, summarize recent work and what's ahead, then intelligently route to the next action — either executing an existing plan or creating the next one. Provides situational awareness before continuing work.
 </purpose>

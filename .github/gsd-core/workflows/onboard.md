@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: At scope approval, offer tracker-connect to import an existing delivery milestone or tracker-sync to publish approved scope. Never publish inferred requirements without approval.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 # /gsd-onboard Workflow
 
 One-command onboarding for an existing or unknown repo. This workflow is a thin

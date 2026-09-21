@@ -1,0 +1,14 @@
+{
+  "name": "ghcp-gsd-sp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Project-local GSD and Superpowers workflow with pluggable project tracking",
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test tracking/tests/*.test.mjs tests/*.test.mjs",
+    "tracking": "node tracking/cli.mjs",
+    "tracking:install": "node scripts/install-tracking.mjs",
+    "tracking:check": "node scripts/install-tracking.mjs --check"
+  }
+}

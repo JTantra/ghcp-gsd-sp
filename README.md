@@ -1,5 +1,25 @@
 # ghcp-gsd-sp
 
+## Pluggable project tracking
+
+GitHub milestones and feature issues can now be linked to GSD execution through a provider-neutral Node 24 CLI. GitHub is implemented; Jira/other tools plug in through a local adapter contract, without rewriting the engine or workflow instructions.
+
+- [Tracking quick start and provider contract](tracking/README.md)
+- [GSD integration and installation](docs/tracking-integration.md)
+- [Architecture and acceptance criteria](docs/tracking-architecture.md)
+- [Verification results and boundaries](docs/tracking-verification.md)
+
+```sh
+npm test
+npm run tracking:check
+```
+
+Use `/tracker-connect`, `/tracker-sync`, `/tracker-status` in Copilot, or run the documented `node tracking/cli.mjs` commands directly. Tracking is OFF until an application-specific `.planning/tracking-config.json` is created. No credentials, external IDs or starter runtime state should be copied to another application.
+
+The integration adds marked instructions to 12 workflows, tracker-awareness to six agent-role skill mappings, and three new skills. Selected Superpowers practices remain unchanged. Native capability metadata is optional; the tested installer wiring does not depend on machine-local capability consent. Interactive agent obedience and headless execution still require rehearsal.
+
+---
+
 GSD Core as the orchestrator, Superpowers as the craft standards, on GitHub Copilot CLI.
 Both installed **project-local** — nothing is written to `~/.copilot/`.
 

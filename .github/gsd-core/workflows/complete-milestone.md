@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: Before local terminal close, run tracking check/status and review all external work. With explicit approval, run close-milestone --apply; it refuses while any remote work item is open. If remote closure fails, do not claim synchronized completion. Archive local evidence with external identities.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 <purpose>
 
 Mark a shipped version (v1.0, v1.1, v2.0) as complete. Creates historical record in MILESTONES.md, performs full PROJECT.md evolution review, reorganizes ROADMAP.md with milestone groupings, and tags the release in git.

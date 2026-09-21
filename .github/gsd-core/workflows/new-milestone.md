@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: Select/import an existing external milestone or explicitly publish approved scope. A local milestone is an execution view, not a second delivery backlog. Do not overwrite the previous local snapshot until archival and scope approval.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 <purpose>
 
 Start a new milestone cycle for an existing project. Loads project context, gathers milestone goals (from MILESTONE-CONTEXT.md or conversation), updates PROJECT.md and STATE.md, optionally runs parallel research, defines scoped requirements with REQ-IDs, spawns the roadmapper to create phased execution plan, and commits all artifacts. Brownfield equivalent of new-project.

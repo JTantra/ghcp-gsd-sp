@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: Before execution, run tracking check and resolve linked issues. At start/blocker/completion, offer a reported event with references. Finishing a plan does not close an issue; executor must not accept or close work.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 <!-- gsd-loop-host
 step: execute
 points: execute:pre, execute:wave:pre, execute:wave:post, execute:post

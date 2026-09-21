@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: Before verification, run tracking check. Map actual test/UAT evidence to issue acceptance criteria. After verification, publish a reported verified or blocked event only with explicit authorization and real references.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 <!-- gsd-loop-host
 step: verify
 points: verify:pre, verify:post

@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: Before push/PR creation, run tracking check and ensure issue links plus verified acceptance coverage appear in the PR. Only use Closes for fully satisfied issues. After PR creation, publish an in_review event with the actual PR URL. This is not evidence that the PR merged.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 <!-- gsd-loop-host
 step: ship
 points: ship:pre, ship:post

@@ -1,3 +1,10 @@
+<!-- project-tracking:begin -->
+<project_tracking>
+Read skills/tracker-awareness/SKILL.md. If .planning/tracking-config.json is absent or explicitly disabled, perform no tracker calls. Otherwise: Use tracker-connect, tracker-sync and tracker-status for external scope. Keep GSD orchestration and Superpowers craft standards. /gsd-capture follow-ups stay local until explicitly approved for publication. Read docs/tracking-integration.md.
+The only writer is tracking/cli.mjs through the configured provider. Never infer the target from origin. Mutations require --apply and the user-approved scope/event. Fail visibly on lookup/sync errors.
+</project_tracking>
+<!-- project-tracking:end -->
+
 <!-- GSD Configuration — managed by gsd-core installer -->
 # Instructions for GSD
 
